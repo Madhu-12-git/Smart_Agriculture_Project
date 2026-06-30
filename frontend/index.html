@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart Agriculture Advisory System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-seedling"></i>
+            <h2>AgriSmart</h2>
+        </div>
+
+        <ul>
+            <li><i class="fa-solid fa-house"></i> Dashboard</li>
+            <li><i class="fa-solid fa-tractor"></i> Farm Details</li>
+            <li><i class="fa-solid fa-wifi"></i> Sensor Readings</li>
+            <li><i class="fa-solid fa-chart-line"></i> Predictions</li>
+            <li><i class="fa-solid fa-bug"></i> Pest Risk</li>
+            <li><i class="fa-solid fa-lightbulb"></i> Recommendations</li>
+        </ul>
+
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+
+        <h1>
+            <i class="fa-solid fa-leaf"></i>
+            Smart Agriculture Advisory System
+        </h1>
+
+        <!-- Search Box -->
+
+        <div class="top-card">
+
+            <label>Enter Farm ID</label>
+
+            <input type="text"
+                id="farmerId"
+                value="F025">
+
+            <button onclick="analyzeFarm()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Analyze Farm
+            </button>
+            
+            <br><br>
+
+            <button onclick="downloadReport()" id="downloadBtn">
+
+                <i class="fa-solid fa-download"></i>
+
+                Download Report
+
+            </button>
+
+        </div>
+
+        <!-- Dashboard -->
+
+        <div id="results">
+
+            <!-- Farm Info -->
+
+            <div class="info-row">
+
+                <div class="info-box">
+                    <h4>Farm ID</h4>
+                    <h2>F025</h2>
+                </div>
+
+                <div class="info-box">
+                    <h4>Crop</h4>
+                    <h2>Rice</h2>
+                </div>
+
+                <div class="info-box">
+                    <h4>District</h4>
+                    <h2>Mandya</h2>
+                </div>
+
+                <div class="info-box">
+                    <h4>Area</h4>
+                    <h2>2.5 ha</h2>
+                </div>
+
+                <div class="info-box">
+                    <h4>Predicted Yield</h4>
+                    <h2>--</h2>
+                </div>
+
+                <div class="info-box">
+                    <h4>District Avg</h4>
+                    <h2>--</h2>
+                </div>
+
+            </div>
+
+            <!-- Sensor Card -->
+
+            <div class="dashboard-card">
+
+                <h2>
+                    <i class="fa-solid fa-wifi"></i>
+                    Sensor Readings
+                </h2>
+
+                <div id="sensorSection"></div>
+
+            </div>
+
+            <!-- Yield -->
+
+            <div class="dashboard-card">
+
+                <h2>
+                    <i class="fa-solid fa-chart-column"></i>
+                    Yield Prediction
+                </h2>
+
+                <div id="yieldSection"></div>
+
+            </div>
+
+            <!-- Pest -->
+
+            <div class="dashboard-card">
+
+                <h2>
+                    <i class="fa-solid fa-bug"></i>
+                    Pest Risk
+                </h2>
+
+                <div id="pestSection"></div>
+
+            </div>
+
+            <!-- Data Quality -->
+
+            <div class="dashboard-card">
+
+                <h2>
+                    <i class="fa-solid fa-database"></i>
+                    Data Quality Assessment
+                </h2>
+
+                <div id="qualitySection"></div>
+
+            </div>
+
+            <!-- Recommendations -->
+
+            <div class="dashboard-card">
+
+                <h2>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Recommendations
+                </h2>
+
+                <div id="recommendationSection"></div>
+
+            </div>
+            
+
+            <!-- NDVI Trend Chart -->
+
+            <div class="dashboard-card">
+
+                <h2>
+                    <i class="fa-solid fa-seedling"></i>
+                    NDVI Trend
+                </h2>
+
+                <canvas id="ndviChart"></canvas>
+
+            </div>
+
+    
+
+        </div>
+
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    display:flex;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:250px;
+    height:100vh;
+    background:linear-gradient(180deg,#0b5d32,#0f7c3d);
+    color:white;
+    position:fixed;
+    left:0;
+    top:0;
+    padding:20px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:40px;
+}
+
+.logo i{
+    font-size:32px;
+}
+
+.logo h2{
+    font-size:28px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:16px;
+    margin-bottom:10px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+    font-size:18px;
+}
+
+.sidebar li:hover{
+    background:rgba(255,255,255,0.15);
+}
+
+.sidebar i{
+    margin-right:10px;
+}
+
+/* Main Content */
+
+.main-content{
+    margin-left:270px;
+    padding:30px;
+    width:100%;
+}
+
+.main-content h1{
+    margin-bottom:25px;
+    color:#222;
+}
+
+/* Top Search Card */
+
+.top-card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom:25px;
+}
+
+.top-card label{
+    display:block;
+    margin-bottom:10px;
+    font-weight:bold;
+}
+
+.top-card input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+.top-card button{
+    background:#198754;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.top-card button:hover{
+    background:#146c43;
+}
+
+/* Info Boxes */
+
+.info-row{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.info-box{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.info-box h4{
+    color:#666;
+    margin-bottom:10px;
+}
+
+.info-box h2{
+    color:#198754;
+}
+
+/* Dashboard Cards */
+
+.dashboard-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.dashboard-card h2{
+    margin-bottom:20px;
+    color:#222;
+}
+
+.dashboard-card h2 i{
+    color:#198754;
+    margin-right:10px;
+}
+
+/* Sensor Bars */
+
+.sensor{
+    margin-bottom:18px;
+}
+
+.sensor-title{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:6px;
+    font-weight:bold;
+}
+
+.progress{
+    background:#e9ecef;
+    height:12px;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress-bar{
+    height:100%;
+    border-radius:20px;
+}
+
+/* Colors */
+
+.green{
+    background:#16a34a;
+}
+
+.blue{
+    background:#3b82f6;
+}
+
+.purple{
+    background:#8b5cf6;
+}
+
+.orange{
+    background:#f59e0b;
+}
+
+.teal{
+    background:#14b8a6;
+}
+
+.pink{
+    background:#ec4899;
+}
+
+/* Yield */
+
+.yield-box{
+    text-align:center;
+    background:#eafaf1;
+    padding:25px;
+    border-radius:12px;
+}
+
+.yield-box h1{
+    color:#198754;
+    margin-top:10px;
+}
+
+/* Pest */
+
+.low-risk{
+    color:green;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.medium-risk{
+    color:orange;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.high-risk{
+    color:red;
+    font-size:30px;
+    font-weight:bold;
+}
+
+/* Recommendations */
+
+.recommend-box ul{
+    padding-left:20px;
+}
+
+.recommend-box li{
+    margin-bottom:10px;
+    font-size:17px;
+}
+
+/* Data Quality */
+
+.quality-box p{
+    margin-bottom:12px;
+    font-size:17px;
+}
+
+#downloadBtn{
+
+    background:#0d6efd;
+
+    color:white;
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+#downloadBtn:hover{
+
+    background:#0b5ed7;
+
+}
