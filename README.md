@@ -1,4 +1,4 @@
-# Smart Agriculture Advisory System
+#CROP YIELD PREDICTION AND PRECISION AGRICULTURE DATA PLATEFORM
 
 ## Project Overview
 
